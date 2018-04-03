@@ -65,11 +65,11 @@ In the `TestFibonacci` class, the `equal` method is used to compare the floating
 Documentation for all the classes can be acessed using the makefile. For firefox, type
 
 ```
-openDocFirefox
+make openDocFirefox
 ```
 For google chrome, type
 ```
-openDocChrome
+make openDocChrome
 ```
 If your preferred browser is not Firefox or Chrome, type
 ```
