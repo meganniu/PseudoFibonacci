@@ -1,0 +1,93 @@
+\hypertarget{classPseudoFibonacci}{}\section{Pseudo\+Fibonacci Class Reference}
+\label{classPseudoFibonacci}\index{Pseudo\+Fibonacci@{Pseudo\+Fibonacci}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ double $>$ \hyperlink{classPseudoFibonacci_a2d4bd0182be1433bc0183ef06dfde23f}{get\+Sequence} (double fn2, double fn1, int terms)
+\item 
+static std\+::string \hyperlink{classPseudoFibonacci_a5380ea4baeb9d77375c622863d181660}{get\+Display} (std\+::vector$<$ double $>$ sequence)
+\item 
+static void \hyperlink{classPseudoFibonacci_aec6b3cac9f56b4510cef0c543d6bbbcb}{display\+Sequence} (std\+::string sequence)
+\item 
+static void \hyperlink{classPseudoFibonacci_a11db61e37c50a8d4851ac0a3212b8a56}{get\+Num} (std\+::string message, double \&num)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Pseudo\+Fibonacci@{Pseudo\+Fibonacci}!display\+Sequence@{display\+Sequence}}
+\index{display\+Sequence@{display\+Sequence}!Pseudo\+Fibonacci@{Pseudo\+Fibonacci}}
+\subsubsection[{\texorpdfstring{display\+Sequence(std\+::string sequence)}{displaySequence(std::string sequence)}}]{\setlength{\rightskip}{0pt plus 5cm}void Pseudo\+Fibonacci\+::display\+Sequence (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{sequence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classPseudoFibonacci_aec6b3cac9f56b4510cef0c543d6bbbcb}{}\label{classPseudoFibonacci_aec6b3cac9f56b4510cef0c543d6bbbcb}
+Displays the sequence in console
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & a string of the terms in the sequence \\
+\hline
+\end{DoxyParams}
+\index{Pseudo\+Fibonacci@{Pseudo\+Fibonacci}!get\+Display@{get\+Display}}
+\index{get\+Display@{get\+Display}!Pseudo\+Fibonacci@{Pseudo\+Fibonacci}}
+\subsubsection[{\texorpdfstring{get\+Display(std\+::vector$<$ double $>$ sequence)}{getDisplay(std::vector< double > sequence)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Pseudo\+Fibonacci\+::get\+Display (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$}]{sequence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classPseudoFibonacci_a5380ea4baeb9d77375c622863d181660}{}\label{classPseudoFibonacci_a5380ea4baeb9d77375c622863d181660}
+Creates a string of the sequence to display.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & the sequence of numbers to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string that is to be displayed 
+\end{DoxyReturn}
+\index{Pseudo\+Fibonacci@{Pseudo\+Fibonacci}!get\+Num@{get\+Num}}
+\index{get\+Num@{get\+Num}!Pseudo\+Fibonacci@{Pseudo\+Fibonacci}}
+\subsubsection[{\texorpdfstring{get\+Num(std\+::string message, double \&num)}{getNum(std::string message, double &num)}}]{\setlength{\rightskip}{0pt plus 5cm}void Pseudo\+Fibonacci\+::get\+Num (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{message, }
+\item[{double \&}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classPseudoFibonacci_a11db61e37c50a8d4851ac0a3212b8a56}{}\label{classPseudoFibonacci_a11db61e37c50a8d4851ac0a3212b8a56}
+Sanitize user input for a number (which may be a decimal or an integer)
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the messaget for the user, asking for input \\
+\hline
+{\em \&num} & the number specified by the user (i.\+e. the input) \\
+\hline
+\end{DoxyParams}
+\index{Pseudo\+Fibonacci@{Pseudo\+Fibonacci}!get\+Sequence@{get\+Sequence}}
+\index{get\+Sequence@{get\+Sequence}!Pseudo\+Fibonacci@{Pseudo\+Fibonacci}}
+\subsubsection[{\texorpdfstring{get\+Sequence(double fn2, double fn1, int terms)}{getSequence(double fn2, double fn1, int terms)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ double $>$ Pseudo\+Fibonacci\+::get\+Sequence (
+\begin{DoxyParamCaption}
+\item[{double}]{fn2, }
+\item[{double}]{fn1, }
+\item[{int}]{terms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classPseudoFibonacci_a2d4bd0182be1433bc0183ef06dfde23f}{}\label{classPseudoFibonacci_a2d4bd0182be1433bc0183ef06dfde23f}
+Calculates the following terms of a recursive sequence given the first two terms. Terms are calculated using the formula\+: Fn = Fn-\/1 + Fn-\/2
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn2} & the first term of the sequence \\
+\hline
+{\em fn1} & the second term of the sequence \\
+\hline
+{\em terms} & the number of terms to calculate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector container with the requested sequence 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pseudo\+Fibonacci.\+hpp\item 
+Pseudo\+Fibonacci.\+cpp\end{DoxyCompactItemize}

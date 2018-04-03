@@ -1,0 +1,89 @@
+Given the two initial terms of the sequence, the program displays the next 10 terms. Each terms of the sequence are calculated with the formula for the Fibonacci sequence\+: Fn = Fn-\/1 + Fn-\/2
+
+\subsection*{Prerequisites}
+
+In order to run the unit tests in the {\ttfamily \hyperlink{classTestFibonacci}{Test\+Fibonacci}} class, the libraries and headers for cppunit must be installed.
+
+On Ubuntu 16.\+04, cppunit libraries and headers can be installed by typing the following into the terminal 
+\begin{DoxyCode}
+1 sudo apt-get install libcppunit-dev
+\end{DoxyCode}
+ The procedure for the installation of cppunit is similar on other Linux operating systems.
+
+\subsection*{Compiling}
+
+The executable files can be compiled using the makefile included. To create both the {\ttfamily Run\+Fibonacci} and the {\ttfamily \hyperlink{classTestFibonacci}{Test\+Fibonacci}} executables, navigate to the \hyperlink{classPseudoFibonacci}{Pseudo\+Fibonacci} folder and use
+
+
+\begin{DoxyCode}
+1 make all
+\end{DoxyCode}
+ To compile just the {\ttfamily \hyperlink{classPseudoFibonacci}{Pseudo\+Fibonacci}} class and create the {\ttfamily Run\+Fibonacci} executable, use 
+\begin{DoxyCode}
+1 make run
+\end{DoxyCode}
+ To compile the automated tests and create the {\ttfamily \hyperlink{classTestFibonacci}{Test\+Fibonacci}} executable, use 
+\begin{DoxyCode}
+1 make test
+\end{DoxyCode}
+ \subsection*{Running the program}
+
+After compiling using {\ttfamily make all} or {\ttfamily make run}, run the program by using the following in terminal 
+\begin{DoxyCode}
+1 ./RunFibonacci
+\end{DoxyCode}
+ When prompted, type the first and second terms of the sequence. The program accepts integers and floating point numbers. For instance, 
+\begin{DoxyCode}
+1 First Number: -1.45
+2 Second Number: 3
+\end{DoxyCode}
+ is considered valid. The program will not accept the input of non-\/numerical characters (exluding the decimal point).
+
+\subsection*{Running the tests}
+
+After compiling the tests in {\ttfamily Test\+Fibonacci.\+cpp} using {\ttfamily make all} or {\ttfamily make test}, run the tests using the following in terminal 
+\begin{DoxyCode}
+1 ./TestFibonacci
+\end{DoxyCode}
+
+
+\subsubsection*{Test Breakdown}
+
+
+\begin{DoxyEnumerate}
+\item {\ttfamily test\+Positives} tests that the output is correct when two positive rational numbers are entered.
+\item {\ttfamily test\+Negatives} tests that the output is correct when two negative rational numbers are entered.
+\item {\ttfamily test\+Mixed} tests that the ouput is correct when a postive and a negative rational number are entered.
+\item {\ttfamily test\+Zeroes} tests that the output is correct when two zeroes are entered.
+\item {\ttfamily test\+Length} tests that the length of the output is correct (i.\+e. 10 terms are calculated). It does not test for the correct values in the output.
+\item {\ttfamily test\+Integers} tests that the ouput is correct when two integers are entered.
+\item {\ttfamily test\+Display} tests that the sequence is correctly displayed in terms of values and formatting.
+\end{DoxyEnumerate}
+
+{\bfseries N\+O\+TE\+:} In the {\ttfamily \hyperlink{classTestFibonacci}{Test\+Fibonacci}} class, the {\ttfamily equal} method is used to compare the floating-\/point values to determine if the content of two containers are the same. Due to the inaccuracy of floating-\/point values, an error of {\ttfamily 0.\+0000000000001} has been allowed. This is the smallest value of error, as determined through trial and error. (Although the process seems a tad shady and the acceptable error may need adjusting when comparing smaller values.)
+
+\subsection*{Documentation}
+
+Documentation for all the classes can be acessed using the makefile. For firefox, type
+
+
+\begin{DoxyCode}
+1 openDocFirefox
+\end{DoxyCode}
+ For google chrome, type 
+\begin{DoxyCode}
+1 openDocChrome
+\end{DoxyCode}
+ If your preferred browser is not Firefox or Chrome, type 
+\begin{DoxyCode}
+1 BROWSER html/index.html
+\end{DoxyCode}
+ and subsitute {\ttfamily B\+R\+O\+W\+S\+ER} for your preferred browser.
+
+\subsection*{Author}
+
+\href{https://github.com/meganniu}{\tt Megan Niu}
+
+\subsection*{Acknowledgments}
+
+The {\ttfamily main} function of {\ttfamily Test\+Fibonacci.\+cpp} was adjusted from a cppunit tutorial found \href{yolinux.com/TUTORIALS/CppUnit.html}{\tt here}. 2-\/clause B\+SD License\+: \href{http://www.yolinux.com/YoLinux-Terms.html}{\tt http\+://www.\+yolinux.\+com/\+Yo\+Linux-\/\+Terms.\+html} 

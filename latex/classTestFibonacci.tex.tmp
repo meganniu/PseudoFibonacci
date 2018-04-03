@@ -1,0 +1,110 @@
+\hypertarget{classTestFibonacci}{}\section{Test\+Fibonacci Class Reference}
+\label{classTestFibonacci}\index{Test\+Fibonacci@{Test\+Fibonacci}}
+
+
+Inheritance diagram for Test\+Fibonacci\+:
+% FIG 0
+
+
+Collaboration diagram for Test\+Fibonacci\+:
+% FIG 1
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classTestFibonacci_a05a97ed922f627921c2bf5b55a92434e}{equal} (std\+::vector$<$ double $>$ v1, std\+::vector$<$ double $>$ v2)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classTestFibonacci_a26d1e881dd9e7297a7120aa4cef585ec}{test\+Positives} (void)
+\item 
+void \hyperlink{classTestFibonacci_a900bbb7fb84756f4cb3f31a31e9f012d}{test\+Negatives} (void)
+\item 
+void \hyperlink{classTestFibonacci_a588c5aaf0bdda824fe7a6128fdea9762}{test\+Mixed} (void)
+\item 
+void \hyperlink{classTestFibonacci_a8be02e24e05075816643b41f447de433}{test\+Zeroes} (void)
+\item 
+void \hyperlink{classTestFibonacci_a421d4ce467bf2cdc519cf295bd0148a9}{test\+Length} (void)
+\item 
+void \hyperlink{classTestFibonacci_ae379bea5ddf321cd3aee32f345c6b53e}{test\+Integers} (void)
+\item 
+void \hyperlink{classTestFibonacci_ae9f96738cd6bfa564ea7ac5afebf8287}{test\+Display} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Test\+Fibonacci@{Test\+Fibonacci}!equal@{equal}}
+\index{equal@{equal}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{equal(std\+::vector$<$ double $>$ v1, std\+::vector$<$ double $>$ v2)}{equal(std::vector< double > v1, std::vector< double > v2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Test\+Fibonacci\+::equal (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$}]{v1, }
+\item[{std\+::vector$<$ double $>$}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classTestFibonacci_a05a97ed922f627921c2bf5b55a92434e}{}\label{classTestFibonacci_a05a97ed922f627921c2bf5b55a92434e}
+Compares the elements of two vector containers of type double in order (i.\+e. compares first element of v1 with first element of v2 etc.)
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & vector container of type double to compare \\
+\hline
+{\em v2} & other vector container of type double to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true only if all elements match and if sizes of the containers match 
+\end{DoxyReturn}
+\index{Test\+Fibonacci@{Test\+Fibonacci}!test\+Display@{test\+Display}}
+\index{test\+Display@{test\+Display}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{test\+Display(void)}{testDisplay(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Fibonacci\+::test\+Display (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTestFibonacci_ae9f96738cd6bfa564ea7ac5afebf8287}{}\label{classTestFibonacci_ae9f96738cd6bfa564ea7ac5afebf8287}
+Unit test for Pseudofibonacci\+::get\+Display. Tests for the correct formatting of output. \index{Test\+Fibonacci@{Test\+Fibonacci}!test\+Integers@{test\+Integers}}
+\index{test\+Integers@{test\+Integers}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{test\+Integers(void)}{testIntegers(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Fibonacci\+::test\+Integers (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTestFibonacci_ae379bea5ddf321cd3aee32f345c6b53e}{}\label{classTestFibonacci_ae379bea5ddf321cd3aee32f345c6b53e}
+Unit test for Pseudofibonacci\+::get\+Sequence. Tests for correct ouput if the two initial terms of the sequence are integers. \index{Test\+Fibonacci@{Test\+Fibonacci}!test\+Length@{test\+Length}}
+\index{test\+Length@{test\+Length}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{test\+Length(void)}{testLength(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Fibonacci\+::test\+Length (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTestFibonacci_a421d4ce467bf2cdc519cf295bd0148a9}{}\label{classTestFibonacci_a421d4ce467bf2cdc519cf295bd0148a9}
+Unit test for Pseudofibonacci\+::get\+Sequence. Tests for correct ouput length (i.\+e. all requested terms are being calculated) \index{Test\+Fibonacci@{Test\+Fibonacci}!test\+Mixed@{test\+Mixed}}
+\index{test\+Mixed@{test\+Mixed}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{test\+Mixed(void)}{testMixed(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Fibonacci\+::test\+Mixed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTestFibonacci_a588c5aaf0bdda824fe7a6128fdea9762}{}\label{classTestFibonacci_a588c5aaf0bdda824fe7a6128fdea9762}
+Unit test for Pseudofibonacci\+::get\+Sequence. Tests for correct ouput if the two initial terms of the sequence are positive rational and a negative rational. \index{Test\+Fibonacci@{Test\+Fibonacci}!test\+Negatives@{test\+Negatives}}
+\index{test\+Negatives@{test\+Negatives}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{test\+Negatives(void)}{testNegatives(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Fibonacci\+::test\+Negatives (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTestFibonacci_a900bbb7fb84756f4cb3f31a31e9f012d}{}\label{classTestFibonacci_a900bbb7fb84756f4cb3f31a31e9f012d}
+Unit test for Pseudofibonacci\+::get\+Sequence. Tests for correct ouput if the two initial terms of the sequence are negative rationals. \index{Test\+Fibonacci@{Test\+Fibonacci}!test\+Positives@{test\+Positives}}
+\index{test\+Positives@{test\+Positives}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{test\+Positives(void)}{testPositives(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Fibonacci\+::test\+Positives (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTestFibonacci_a26d1e881dd9e7297a7120aa4cef585ec}{}\label{classTestFibonacci_a26d1e881dd9e7297a7120aa4cef585ec}
+Unit test for Pseudofibonacci\+::get\+Sequence. Tests for correct ouput if the two initial terms of the sequence are positive rationals. \index{Test\+Fibonacci@{Test\+Fibonacci}!test\+Zeroes@{test\+Zeroes}}
+\index{test\+Zeroes@{test\+Zeroes}!Test\+Fibonacci@{Test\+Fibonacci}}
+\subsubsection[{\texorpdfstring{test\+Zeroes(void)}{testZeroes(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Fibonacci\+::test\+Zeroes (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTestFibonacci_a8be02e24e05075816643b41f447de433}{}\label{classTestFibonacci_a8be02e24e05075816643b41f447de433}
+Unit test for Pseudofibonacci\+::get\+Sequence. Tests for correct ouput if the two initial terms of the sequence are zeroes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Test\+Fibonacci.\+hpp\item 
+Test\+Fibonacci.\+cpp\end{DoxyCompactItemize}
