@@ -38,7 +38,7 @@ When prompted, type the first and second terms of the sequence. The program acce
 First Number: -1.45
 Second Number: 3
 ```
-is considered valid. The program will not accept the input of non-numerical characters (exluding the decimal point).
+is considered valid. The program will not accept the input of non-numerical characters (exlcuding the decimal point).
 
 ## Running the tests
 
