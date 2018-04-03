@@ -12,7 +12,7 @@ sudo apt-get install libcppunit-dev
 ```
 The procedure for the installation of cppunit is similar on other Linux operating systems.
 
-##Compiling
+## Compiling
 
 The executable files can be compiled using the makefile included. To create both the `RunFibonacci`  and the `TestFibonacci` executables, navigate to the PseudoFibonacci folder and use
 
